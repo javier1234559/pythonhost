@@ -7,7 +7,7 @@ conn = MySQLdb.connect(host='db-aurora.cluster-ro-ctbqd9rtrx3c.us-east-1.rds.ama
 user='admin',
 passwd='nhat123456',
 db='covid19_aurora', 
-port=3306)
+port='3306')
 print('Open DB successfully')
 ut.insert(conn)
 ut.select(conn)
