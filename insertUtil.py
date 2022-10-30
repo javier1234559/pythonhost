@@ -14,7 +14,7 @@ def insert(conn):
     counter = 1
     for d in dt:
         # Ta lấy dữ liệu từ linh raw trên github thầy cung cấp
-        url = 'https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_daily_reports/' + d + '.csv'
+        url = 'https://github.com/CSSEGISandData/COVID-19/blob/master/csse_covid_19_data/csse_covid_19_daily_reports_us/' + d + '.csv'
         df = pd.read_csv(url, index_col=0)
         cols = list(df.columns)
         attr = getAttr(cols, 'VARCHAR(255)')
